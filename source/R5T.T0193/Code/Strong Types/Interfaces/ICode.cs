@@ -1,7 +1,7 @@
 using System;
 
 using R5T.T0178;
-using R5T.T0179;
+using R5T.T0185;
 
 
 namespace R5T.T0193
@@ -11,7 +11,8 @@ namespace R5T.T0193
     /// </summary>
     [StrongTypeMarker]
     public interface ICode : IStrongTypeMarker,
-        ITyped<string>
+        // Code *is* a form of text.
+        IText
     {
     }
 }
